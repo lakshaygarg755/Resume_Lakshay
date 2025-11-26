@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape LAKSHAY} \\ \vspace{1pt}
+    \small +91-8814020280 $|$ \href{mailto:lakshaygarg9812@gmail.com}{\underline{lakshaygarg9812@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/igarglakshay}{\underline{linkedin.com/in/igarglakshay}} $|$
+    \href{https://github.com/lakshaygarg755}{\underline{github.com/lakshaygarg755}} $|$
+    \href{https://www.lakshaygarg.in}{\underline{lakshaygarg.in}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology, Manipur}{Manipur, India}
+      {Bachelor of Technology in Computer Science and Engineering; CGPA: 7.38(upto sem 6)}{2022 -- 2026}
+    \resumeSubheading
+      {D.A.V. Public School, Panipat}{Panipat, India}
+      {Class XII | \textbf{CBSE}; Percentage: 92.6\%}{2021}
+    \resumeSubheading
+      {D.A.V. Public School, Panipat}{Panipat, India}
+      {Class X | \textbf{CBSE}; Percentage: 92.8\%}{2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Intern Developer}{Remote}
+      {MBSGames}{May 2025 -- July 2025}
+      \resumeItemListStart
+        \resumeItem{Developed core gameplay mechanics for 'Tiny Toads,' an educational mobile game, utilizing \textbf{Unity and C\#} to enhance user engagement and learning outcomes.}
+        \resumeItem{Engineered interactive learning modules (alphabet drawing, number counting) and optimized performance, resulting in a smoother user experience on low-end devices.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/lakshaygarg755/deribit-trader}{High-Performance Trading Platform (CLI)}} $|$ \emph{C++, Boost.Beast, WebSocket, Deribit APIs}}{Apr 2025}
+        \resumeItemListStart
+          \resumeItem{Architected a low-latency HFT simulation engine in C++, capable of processing real-time market data via Deribit APIs with \textbf{sub-millisecond latency}.}
+          \resumeItem{Implemented lock-free data structures and multithreaded request handling, increasing throughput by \textbf{40\%} and ensuring fault tolerance under high load.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/lakshaygarg755/course_organizer}{Course Directory}} | \href{https://course-organizer.onrender.com/}{\underline{Live Demo}} | \emph{MongoDB, Express.js, ejs, Node.js}}{Jan 2025 -- Feb 2025}
+          \resumeItemListStart
+            \resumeItem{Built a responsive full-stack course management platform with RESTful APIs, supporting 500+ documents and role-based access for admins and professors.}
+            \resumeItem{Applied MVC design pattern with clear separation of concerns, ensuring maintainable and scalable architecture.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/lakshaygarg755/chatapp}{Chat Application}} $|$ \emph{Node.js, Express.js, MongoDB, Socket.io}}{Dec 2024 -- Jan 2025}
+          \resumeItemListStart
+            \resumeItem{Architected a real-time chat application, leveraging WebSockets for low-latency communication in a client-server model.}
+            \resumeItem{Integrated \textbf{Redis caching} and pub/sub messaging, reducing database query load by \textbf{40\%} and enabling seamless horizontal scaling.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/lakshaygarg755/Algo-visualiser}{Network Scheduling Algorithm Visualizer}} $|$ \emph{C++, Qt Framework}}{Aug 2024 -- Oct 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented an interactive visualization tool for 5 network scheduling algorithms.}
+            \resumeItem{Optimized rendering algorithms in \textbf{Qt}, achieving a \textbf{40\% reduction in execution time} and supporting real-time visualization of complex scheduling logic.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: C/C++, Python, Java, JavaScript (ES6+), C\#, Go} \\
+      \textbf{Frameworks \& Libraries}{: React.js, Node.js, Express.js, Next.js, Bootstrap, Tailwind CSS, Redux} \\
+      \textbf{Databases}{: MongoDB, MySQL, PostgreSQL, SQL/NoSQL Design} \\
+      \textbf{Developer Tools}{: Git, GitHub, VS Code, npm, Postman, Linux/Unix, Agile/Scrum} \\
+      \textbf{Cloud \& Deployment}{: Render, Docker (basic), AWS (basic)} \\
+    }}
+ \end{itemize}
+
+ 
+%-----------RELEVANT COURSEWORK-----------
+\section{Relevant Coursework}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Core CS}{: Data Structures \& Algorithms, Object-Oriented Programming, Operating Systems, Computer Networks, Database Management Systems, Compiler Design} \\
+     \textbf{AI \& ML}{: Artificial Intelligence, Machine Learning, Natural Language Processing, Information Retrieval} \\
+     \textbf{Systems \& Security}{: Cloud Computing, Cyber Security, Cryptography, Internet of Things (IoT)} \\
+    }}
+ \end{itemize}
+
+
+%-----------CERTIFICATIONS & LEADERSHIP-----------
+\section{Certifications \& Leadership}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Web Development Bootcamp} - Udemy (Mar 2024) | 65-hour full-stack development training. \\
+      \textbf{Team Lead - Smart India Hackathon 2024} (Aug 2024) | Led 6-person development team using Agile/Scrum. \\
+      \textbf{Problem Solving} | Solved 500+ coding problems on \href{https://www.hackerrank.com/profile/lakshaygarg9812}{HackerRank} and \href{https://leetcode.com/u/iiitm_042301/}{LeetCode}. \\
+      \textbf{Ethical Hacking and Penetration Testing} - C-DAC NOIDA (Dec 2024 -- Jan 2025) | Completed online training \& virtual internship under Cyber Gyan Project.
+    }}
+ \end{itemize}
+
+
+\end{document}
