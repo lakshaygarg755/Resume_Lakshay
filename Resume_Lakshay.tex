@@ -43,7 +43,7 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
@@ -54,8 +54,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -73,31 +73,31 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-8pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,19 +125,23 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Indian Institute of Information Technology, Manipur}{Manipur, India}
-      {Bachelor of Technology in Computer Science and Engineering; CGPA: 7.43(upto sem 7)}{2022 -- 2026}
-    \resumeSubheading
-      {D.A.V. Public School, Panipat}{Panipat, India}
-      {Class XII | \textbf{CBSE}; Percentage: 92.6\%}{2021}
-    \resumeSubheading
-      {D.A.V. Public School, Panipat}{Panipat, India}
-      {Class X | \textbf{CBSE}; Percentage: 92.8\%}{2019}
+      {Bachelor of Technology in Computer Science and Engineering; CGPA: 7.46}{2022 -- 2026}
+
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full-Stack Developer Intern}{Remote}
+      {Satvify}{Jan 2026 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Engineered a comprehensive e-commerce platform using \textbf{React.js, Node.js, Express.js, and PostgreSQL}, delivering a seamless shopping experience for healthy and vegan products.}
+        \resumeItem{Integrated \textbf{Razorpay} for secure payment processing and deployed the scalable architecture on \textbf{AWS}.}
+        % \resumeItem{Architected system design, including Data Flow Diagrams (DFDs) and Entity-Relationship (ER) models for robust data management.}
+      \resumeItemListEnd
+
     \resumeSubheading
       {Intern Developer}{Remote}
       {MBSGames}{May 2025 -- July 2025}
@@ -152,30 +156,25 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-        {\textbf{\href{https://github.com/lakshaygarg755/deribit-trader}{High-Performance Trading Platform (CLI)}} $|$ \emph{C++, Boost.Beast, WebSocket, Deribit APIs}}{Apr 2025}
-        \resumeItemListStart
-          \resumeItem{Architected a low-latency HFT simulation engine in C++, capable of processing real-time market data via Deribit APIs with \textbf{sub-millisecond latency}.}
-          \resumeItem{Leveraged Boost.Beast and Boost.Asio for asynchronous network communication, ensuring low-latency request handling and real-time market data streaming.}
-        \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/lakshaygarg755/course_organizer}{Course Directory}} | \href{https://course-organizer.onrender.com/}{\underline{Live Demo}} | \emph{MongoDB, Express.js, ejs, Node.js}}{Jan 2025 -- Feb 2025}
+          {\textbf{\href{https://github.com/lakshaygarg755/course_organizer}{Course Directory}} | \href{https://course-organizer.onrender.com/}{\underline{Live Demo}} | \emph{Express.js, ejs, Node.js, MongoDB}}{Jan 2025 -- Feb 2025}
           \resumeItemListStart
-            \resumeItem{Built a responsive full-stack course management platform with RESTful APIs, supporting 500+ documents and role-based access for admins and professors.}
-            \resumeItem{Applied MVC design pattern with clear separation of concerns, ensuring maintainable and scalable architecture.}
+            \resumeItem{Architected a full-stack educational platform using Node.js, Express.js, and MongoDB (Mongoose) with an EJS and Bootstrap 5 frontend to centralize university course management.}
+            \resumeItem{Implemented secure user authentication and Role-Based Access Control using Passport.js and bcrypt, enabling admins to manage curriculum while students access materials.}
+            \resumeItem{Integrated Cloudinary cloud storage via Multer to securely process and host permanent uploads of lecture PDFs and assignment files, optimizing server storage.}
           \resumeItemListEnd
           
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/lakshaygarg755/java-chat-app}{Multi-User Chat Application}} $|$ \emph{Java, Swing, MySQL, JDBC}}{Dec 2024 -- Jan 2025}
+          {\textbf{\href{https://github.com/lakshaygarg755/chatapp}{Real-Time Chat Application}} $|$ \emph{Node.js, Express.js, Socket.io}}{2025}
           \resumeItemListStart
-            \resumeItem{Engineered a multi-threaded Client-Server architecture using Java Sockets, enabling concurrent real-time communication for multiple simultaneous users.}
-            \resumeItem{Designed dual-mode interface (Swing GUI and CLI) with MySQL backend using JDBC for user authentication (encrypted passwords), chat room management, and persistent message history.}
+            \resumeItem{Real-time chat application supporting multiple users and private messaging.}
+            \resumeItem{Integrated WebSockets for real-time communication and authentication for secure login.}
           \resumeItemListEnd
           
       \resumeProjectHeading
           {\textbf{\href{https://github.com/lakshaygarg755/Algo-visualiser}{Network Scheduling Algorithm Visualizer}} $|$ \emph{C++, Qt Framework}}{Aug 2024 -- Oct 2024}
           \resumeItemListStart
             \resumeItem{Designed and implemented an interactive visualization tool for 5 network scheduling algorithms.}
-            \resumeItem{Optimized rendering algorithms in \textbf{Qt}, achieving a \textbf{40\% reduction in execution time} and supporting real-time visualization of complex scheduling logic.}
+            \resumeItem{Enabled real-time simulation where users can input the number of packets, time sequences, and output flow rate, dynamically visualizing the algorithm's behavior.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -183,11 +182,11 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{Languages}{: C/C++, JavaScript(ES6+), Rust,  Python, Java, C\#, Go} \\
-      \textbf{Frameworks \& Libraries}{: React.js, Node.js, Express.js, Next.js, Bootstrap, Tailwind CSS, Redux, Redis} \\
+      \textbf{Languages}{: C/C++, JavaScript} \\
+      \textbf{Frameworks \& Libraries}{: Node.js, Express.js, Bootstrap, Tailwind CSS} \\
       \textbf{Databases}{: MySQL, PostgreSQL, SQL/NoSQL Design} \\
-      \textbf{Developer Tools}{: Git, GitHub, VS Code, npm, Postman, Linux/Unix, Agile/Scrum} \\
-      \textbf{Cloud \& Deployment}{: Render, Docker (basic), AWS (basic)} \\
+      \textbf{Developer Tools}{: Git, GitHub, VS Code, npm, Postman} \\
+      \textbf{Cloud \& Deployment}{: Render} \\
     }}
  \end{itemize}
 
@@ -213,6 +212,5 @@
       \textbf{Ethical Hacking and Penetration Testing} - C-DAC NOIDA (Dec 2024 -- Jan 2025) | Completed online training \& virtual internship under Cyber Gyan Project.
     }}
  \end{itemize}
-
 
 \end{document}
